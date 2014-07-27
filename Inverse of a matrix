@@ -1,5 +1,4 @@
-## This function creates a list of functions that allows the next function called cacheSolve to solve the inverse of the matrix 
-## in the makeCacheMatrix
+## This function creates a list of functions that allows the next function called cacheSolve to solve the inverse of a matrix.
 
 makeCacheMatrix<-function(x=matrix()){
 	m<-NULL
