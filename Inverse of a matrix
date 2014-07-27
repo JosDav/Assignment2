@@ -1,3 +1,6 @@
+## This function creates a list of functions that allows the next function called cacheSolve to solve the inverse of the matrix 
+## in the makeCacheMatrix
+
 makeCacheMatrix<-function(x=matrix()){
 	m<-NULL
 	set<-function(y){
@@ -9,6 +12,9 @@ makeCacheMatrix<-function(x=matrix()){
 	getsolve<-function()m
 	list(set=set,get=get,setsolve=setsolve,getsolve=getsolve)
 }
+
+## This function allows the matrix stored in the previous function  to compute the inverse of the matrix and to store it in the 
+## cache of the device and recall it again
 
 cacheSolve<-function(x,...){
 	m<-x$getsolve()
